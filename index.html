@@ -17,20 +17,19 @@
       font-family: serif;
       color: rgb(147, 150, 166);
      }
-     .mypic {
- 
- border-top: 5px solid black;
- border-bottom: 10px solid black;
- 
- 
-}
-.mypic { 
-         transition: box-shadow 0.3s ease; 
-     } 
+   .card-img-top {
+      transition: 0.5s ease-in-out;
+      display: block;
+      object-fit: cover;
+      
+    }
+    .card-img-top:hover {
+      transform: scale(0.9);
+    }
+    .card {
+      overflow: hidden;
+    }
 
-     .mypic:hover { 
-         box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.6); 
-     } 
 
      #more {display: none;
      }
@@ -166,10 +165,11 @@
       <div class="container col-xxl-8 px-4 py-5 pt-0">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <p class="mypic">
-            <img  src="./Mypicture.jpg"  class="d-block mx-lg-auto img-fluid " alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </p>
-        
+             <div class="col">
+              <div class="card">
+                  <a><img src="./Mypicture.jpg" class="card-img-top" alt="..."></a>
+              </div>
+          </div>
         </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 ">About me!</h1>
